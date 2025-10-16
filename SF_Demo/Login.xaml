@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SF_Demo.Login" Shell.NavBarIsVisible="False">
+    <Grid>
+        <Image Source="bg.jpg" Aspect="AspectFill"  Opacity="0.9"   ZIndex="0" />
+        <!--<Label Text="Welcome AVC_App" HorizontalTextAlignment="Center" Margin=" 0,50,0,0" FontSize="40" TextColor="White" FontAttributes="Bold" FontFamily="Segoe UI Semibold"/>-->
+
+        <!-- Form login -->
+        <Border HeightRequest="300" WidthRequest="300" StrokeThickness="1" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center" StrokeShape="RoundRectangle 20">
+            <StackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+                <Label Text="Login" HorizontalTextAlignment="Center" FontSize="30"  FontAttributes="Bold" FontFamily="Segoe UI Semibold" TextColor="#FF3F4D63" />
+                <Entry  x:Name="txtUser" WidthRequest="250" Margin="0,20,0,0" HeightRequest="50" Placeholder="Tên đăng nhập"
+            Keyboard="Default" />
+                <Entry x:Name="txtPass" Margin="0,20,0,0" WidthRequest="250"  Placeholder="Mật khẩu" IsPassword="True" BackgroundColor="White" HeightRequest="50" />
+                <Button x:Name="btLogin" Text="Đăng nhập" Margin="0,20,0,0" BackgroundColor="#2196F3" TextColor="White" CornerRadius="10" HeightRequest="50" Clicked="btLogin_Clicked" />
+            </StackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

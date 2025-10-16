@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SF_Demo.DictValueConverter"
+             x:Class="SF_Demo.MainPage"
+             Title="Booking">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DictionaryValueConverter x:Key="DictValueConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="0,0,0,0" Spacing="0">
+            <Label x:Name="txtName"  SemanticProperties.HeadingLevel="Level1" TextColor="#06800a" HorizontalTextAlignment="Start" Margin="20,2,0,0"/>
+            <VerticalStackLayout Padding="20" Spacing="15">
+
+                <Label Text="Select Meeting Room:" />
+                <Picker x:Name="cbRoom">
+                    <Picker.Items>
+                        <x:String>Meeting MFG202</x:String>
+                        <x:String>Meeting MFG203</x:String>
+                        <x:String>Meeting SMT201</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Select Day:" />
+                <DatePicker x:Name="dpDay"/>
+
+                <Label Text="Select Time:" />
+                <TimePicker x:Name="dpHour"/>
+
+                <Label Text="Meeting Content:" />
+                <Editor x:Name="txtRemark" HeightRequest="80" />
+
+                <Button x:Name="btBook" Text="Booking" Clicked="btBook_Clicked"/>
+                
+                <Button x:Name="btView" Text="View" Clicked="btView_Clicked"/>
+
+                <Label Text="Meeting Scheduled:" FontAttributes="Bold" Margin="0,20,0,10"/>
+                <CollectionView x:Name="clView" IsEnabled="True" HorizontalOptions="Center" SelectionMode="Single" ItemsSource="{Binding Items}" SelectionChanged="clView_SelectionChanged" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnItemTapped"/>
+                                </Frame.GestureRecognizers>
+                                <VerticalStackLayout HorizontalOptions="Fill">
+                                    <Label Text="{Binding ., StringFormat='Room: {}', Converter={StaticResource DictValueConverter}, ConverterParameter=Room}" FontAttributes="Bold" TextColor="#25ba07"/>
+                                    <Label Text="{Binding ., Converter={StaticResource DictValueConverter}, ConverterParameter=BookingDay}" />
+                                    <Label Text="{Binding ., Converter={StaticResource DictValueConverter}, ConverterParameter=BookingTime}" />
+                                    <Label Text="{Binding ., StringFormat='Title: {}', Converter={StaticResource DictValueConverter}, ConverterParameter=Remark}" FontAttributes="Bold" TextColor="#ff6a00"/>
+                                    <Label Text="{Binding ., StringFormat='Requester: {}', Converter={StaticResource DictValueConverter}, ConverterParameter=Requester}" />
+                                    <Label Text="{Binding ., StringFormat='Request time: {}', Converter={StaticResource DictValueConverter}, ConverterParameter=TimeRequest}" FontAttributes="Italic"/>
+                                    <Label Text="{Binding ., Converter={StaticResource DictValueConverter}, ConverterParameter=BookID}" IsVisible="Collapse"/>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

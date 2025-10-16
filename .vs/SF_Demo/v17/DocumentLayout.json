@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|d:\\titi\\dev\\project\\avc\\sf_demo\\sf_demo\\sf_demo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|solutionrelative:sf_demo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|d:\\titi\\dev\\project\\avc\\sf_demo\\sf_demo\\sf_demo\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|solutionrelative:sf_demo\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|d:\\titi\\dev\\project\\avc\\sf_demo\\sf_demo\\sf_demo\\dictvalueconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|solutionrelative:sf_demo\\dictvalueconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|d:\\titi\\dev\\project\\avc\\sf_demo\\sf_demo\\sf_demo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61A5B3C-0EAE-4A7B-9578-D0EBB148880A}|SF_Demo\\SF_Demo.csproj|solutionrelative:sf_demo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DictValueConverter.cs",
+              "DocumentMoniker": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\DictValueConverter.cs",
+              "RelativeDocumentMoniker": "SF_Demo\\DictValueConverter.cs",
+              "ToolTip": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\DictValueConverter.cs",
+              "RelativeToolTip": "SF_Demo\\DictValueConverter.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:25:24.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "SF_Demo\\MainViewModel.cs",
+              "ToolTip": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainViewModel.cs",
+              "RelativeToolTip": "SF_Demo\\MainViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:22:53.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainPage.xaml",
+              "RelativeDocumentMoniker": "SF_Demo\\MainPage.xaml",
+              "ToolTip": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainPage.xaml",
+              "RelativeToolTip": "SF_Demo\\MainPage.xaml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwDwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-18T07:34:21.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "SF_Demo\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Titi\\DEV\\Project\\AVC\\SF_Demo\\SF_Demo\\SF_Demo\\MainPage.xaml.cs",
+              "RelativeToolTip": "SF_Demo\\MainPage.xaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:13:46.432Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1029,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1094,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

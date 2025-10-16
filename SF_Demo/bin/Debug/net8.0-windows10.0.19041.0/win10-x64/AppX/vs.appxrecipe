@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TITI_DUONG</Machine>
+    <WindowsUser>titi_duong</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>com.companyname.sfdemo</PackageIdentityName>
+    <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <RegisteredManifestChecksum>0B439331DE6A44A591480581AB9E9C433FD4E4DD513CEFB524071317EDF44165</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.companyname.sfdemo_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.companyname.sfdemo_9zz4h110yvjzm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>com.companyname.sfdemo</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=User Name</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.1</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2025-10-16T14:38:48.482</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2025-10-16T14:20:26.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SF_Demo.runtimeconfig.json">
+      <PackagePath>SF_Demo.runtimeconfig.json</PackagePath>
+      <Modified>2025-05-18T11:39:34.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SF_Demo.dll">
+      <PackagePath>SF_Demo.dll</PackagePath>
+      <Modified>2025-10-16T14:38:47.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+      <PackagePath>SF_Demo.exe</PackagePath>
+      <Modified>2025-10-16T14:38:47.292</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\Resources\Raw\AboutAssets.txt">
+      <PackagePath>AboutAssets.txt</PackagePath>
+      <Modified>2025-05-15T03:06:56.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\sf_logo1SplashScreen.scale-100.png">
+      <PackagePath>sf_logo1SplashScreen.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:00.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\sf_logo1SplashScreen.scale-125.png">
+      <PackagePath>sf_logo1SplashScreen.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:00.905</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\sf_logo1SplashScreen.scale-150.png">
+      <PackagePath>sf_logo1SplashScreen.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:00.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\sf_logo1SplashScreen.scale-200.png">
+      <PackagePath>sf_logo1SplashScreen.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:01.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\sf_logo1SplashScreen.scale-400.png">
+      <PackagePath>sf_logo1SplashScreen.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:01.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\MauiMaterialAssets.ttf">
+      <PackagePath>MauiMaterialAssets.ttf</PackagePath>
+      <Modified>2025-03-03T07:37:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+      <Modified>2025-05-15T03:06:56.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+      <Modified>2025-05-15T03:06:56.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bg.scale-100.jpg">
+      <PackagePath>bg.scale-100.jpg</PackagePath>
+      <Modified>2025-05-18T08:02:06.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.089</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.087</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logo.ico">
+      <PackagePath>sf_logo.ico</PackagePath>
+      <Modified>2025-05-18T08:02:06.166</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLargeTile.scale-100.png">
+      <PackagePath>sf_logoLargeTile.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLargeTile.scale-125.png">
+      <PackagePath>sf_logoLargeTile.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLargeTile.scale-150.png">
+      <PackagePath>sf_logoLargeTile.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLargeTile.scale-200.png">
+      <PackagePath>sf_logoLargeTile.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLargeTile.scale-400.png">
+      <PackagePath>sf_logoLargeTile.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.093</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>sf_logoLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.131</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>sf_logoLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.130</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>sf_logoLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>sf_logoLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.129</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>sf_logoLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>sf_logoLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>sf_logoLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>sf_logoLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>sf_logoLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>sf_logoLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.134</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.scale-100.png">
+      <PackagePath>sf_logoLogo.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.scale-125.png">
+      <PackagePath>sf_logoLogo.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.scale-150.png">
+      <PackagePath>sf_logoLogo.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.scale-200.png">
+      <PackagePath>sf_logoLogo.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.162</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.scale-400.png">
+      <PackagePath>sf_logoLogo.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.161</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.targetsize-16.png">
+      <PackagePath>sf_logoLogo.targetsize-16.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.targetsize-24.png">
+      <PackagePath>sf_logoLogo.targetsize-24.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.targetsize-256.png">
+      <PackagePath>sf_logoLogo.targetsize-256.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.targetsize-32.png">
+      <PackagePath>sf_logoLogo.targetsize-32.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoLogo.targetsize-48.png">
+      <PackagePath>sf_logoLogo.targetsize-48.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.155</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoMediumTile.scale-100.png">
+      <PackagePath>sf_logoMediumTile.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoMediumTile.scale-125.png">
+      <PackagePath>sf_logoMediumTile.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoMediumTile.scale-150.png">
+      <PackagePath>sf_logoMediumTile.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoMediumTile.scale-200.png">
+      <PackagePath>sf_logoMediumTile.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoMediumTile.scale-400.png">
+      <PackagePath>sf_logoMediumTile.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoSmallTile.scale-100.png">
+      <PackagePath>sf_logoSmallTile.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoSmallTile.scale-125.png">
+      <PackagePath>sf_logoSmallTile.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoSmallTile.scale-150.png">
+      <PackagePath>sf_logoSmallTile.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoSmallTile.scale-200.png">
+      <PackagePath>sf_logoSmallTile.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoSmallTile.scale-400.png">
+      <PackagePath>sf_logoSmallTile.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoStoreLogo.scale-100.png">
+      <PackagePath>sf_logoStoreLogo.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.125</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoStoreLogo.scale-125.png">
+      <PackagePath>sf_logoStoreLogo.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoStoreLogo.scale-150.png">
+      <PackagePath>sf_logoStoreLogo.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoStoreLogo.scale-200.png">
+      <PackagePath>sf_logoStoreLogo.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoStoreLogo.scale-400.png">
+      <PackagePath>sf_logoStoreLogo.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoWideTile.scale-100.png">
+      <PackagePath>sf_logoWideTile.scale-100.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoWideTile.scale-125.png">
+      <PackagePath>sf_logoWideTile.scale-125.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.104</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoWideTile.scale-150.png">
+      <PackagePath>sf_logoWideTile.scale-150.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.103</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoWideTile.scale-200.png">
+      <PackagePath>sf_logoWideTile.scale-200.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sf_logoWideTile.scale-400.png">
+      <PackagePath>sf_logoWideTile.scale-400.png</PackagePath>
+      <Modified>2025-05-18T08:02:06.100</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SF_Demo.deps.json">
+      <PackagePath>SF_Demo.deps.json</PackagePath>
+      <Modified>2025-10-16T14:20:25.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
+      <PackagePath>WinRT.Runtime.dll</PackagePath>
+      <Modified>2024-11-11T17:23:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\communitytoolkit.maui\8.0.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+      <Modified>2024-03-29T12:33:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\communitytoolkit.maui.core\8.0.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+      <Modified>2024-03-29T12:33:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
+      <Modified>2023-10-31T14:59:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.configuration.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
+      <Modified>2023-10-31T14:59:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.1\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
+      <Modified>2024-09-16T23:09:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.2\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+      <Modified>2024-09-16T23:09:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.logging\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.dll">
+      <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
+      <Modified>2024-09-16T23:10:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.2\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
+      <Modified>2024-09-16T23:09:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.logging.debug\8.0.1\lib\net8.0\Microsoft.Extensions.Logging.Debug.dll">
+      <PackagePath>Microsoft.Extensions.Logging.Debug.dll</PackagePath>
+      <Modified>2024-09-16T23:10:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.options\8.0.2\lib\net8.0\Microsoft.Extensions.Options.dll">
+      <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
+      <Modified>2024-01-18T03:05:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.dll">
+      <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
+      <Modified>2023-10-31T14:58:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
+      <Modified>2024-03-11T15:36:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.io.recyclablememorystream\3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll">
+      <PackagePath>Microsoft.IO.RecyclableMemoryStream.dll</PackagePath>
+      <Modified>2024-06-11T20:23:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
+      <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
+      <Modified>2024-11-07T17:33:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
+      <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.xaml\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
+      <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
+      <Modified>2024-11-07T17:31:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.dll">
+      <PackagePath>Microsoft.Maui.dll</PackagePath>
+      <Modified>2024-11-07T17:30:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.essentials\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
+      <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
+      <Modified>2024-11-07T17:33:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.graphics\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+      <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
+      <Modified>2024-11-07T17:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
+      <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
+      <Modified>2024-11-07T17:33:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+      <Modified>2024-07-31T03:45:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll">
+      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+      <Modified>2024-08-01T22:37:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
+      <Modified>2024-06-25T19:49:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Management.Deployment.Projection.dll">
+      <PackagePath>Microsoft.Windows.Management.Deployment.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll">
+      <PackagePath>Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Power.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Projection.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll">
+      <PackagePath>Microsoft.Windows.Widgets.Projection.dll</PackagePath>
+      <Modified>2024-03-28T23:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+      <Modified>2024-08-01T22:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.licensing\28.2.9\lib\net8.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+      <Modified>2025-03-03T08:18:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.core\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
+      <PackagePath>Syncfusion.Maui.Core.dll</PackagePath>
+      <Modified>2025-03-03T07:53:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.data\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Data.dll">
+      <PackagePath>Syncfusion.Maui.Data.dll</PackagePath>
+      <Modified>2025-03-03T08:19:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.datagrid\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.DataGrid.dll">
+      <PackagePath>Syncfusion.Maui.DataGrid.dll</PackagePath>
+      <Modified>2025-03-03T08:49:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.datasource\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.DataSource.dll">
+      <PackagePath>Syncfusion.Maui.DataSource.dll</PackagePath>
+      <Modified>2025-03-03T08:08:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.gridcommon\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.GridCommon.dll">
+      <PackagePath>Syncfusion.Maui.GridCommon.dll</PackagePath>
+      <Modified>2025-03-03T08:10:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.inputs\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Inputs.dll">
+      <PackagePath>Syncfusion.Maui.Inputs.dll</PackagePath>
+      <Modified>2025-03-03T08:25:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.listview\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.ListView.dll">
+      <PackagePath>Syncfusion.Maui.ListView.dll</PackagePath>
+      <Modified>2025-03-03T08:12:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.pulltorefresh\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.PullToRefresh.dll">
+      <PackagePath>Syncfusion.Maui.PullToRefresh.dll</PackagePath>
+      <Modified>2025-03-03T08:46:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
+      <Modified>2023-10-31T15:00:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ca\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ca\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\cs\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>cs\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\da\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>da\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\de\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>de\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\el\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>el\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\es\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>es\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\fi\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>fi\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\fr\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>fr\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\he\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>he\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hi\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>hi\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hr\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>hr\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\hu\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>hu\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\id\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>id\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\it\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>it\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ja\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ja\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ko\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ko\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ms\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ms\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\nb\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>nb\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\nl\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>nl\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pl\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>pl\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pt-BR\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\pt\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>pt\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ro\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ro\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\ru\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>ru\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\sk\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>sk\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\sv\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>sv\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\th\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>th\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:30:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\tr\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>tr\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\uk\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>uk\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\vi\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>vi\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-HK\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>zh-HK\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-Hans\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>zh-Hans\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\zh-Hant\Microsoft.Maui.Controls.resources.dll">
+      <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
+      <Modified>2024-11-07T17:31:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.datagrid\28.2.9\lib\net8.0-windows10.0.19041.0\en-US\Syncfusion.Maui.DataGrid.resources.dll">
+      <PackagePath>en-US\Syncfusion.Maui.DataGrid.resources.dll</PackagePath>
+      <Modified>2025-03-03T08:49:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.inputs\28.2.9\lib\net8.0-windows10.0.19041.0\en-US\Syncfusion.Maui.Inputs.resources.dll">
+      <PackagePath>en-US\Syncfusion.Maui.Inputs.resources.dll</PackagePath>
+      <Modified>2025-03-03T08:25:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2024-03-11T15:36:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2024-06-25T19:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
+      <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
+      <Modified>2024-11-07T17:09:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.controls.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
+      <PackagePath>Microsoft.Maui.Controls.pri</PackagePath>
+      <Modified>2024-11-07T17:08:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\microsoft.maui.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
+      <PackagePath>Microsoft.Maui.pri</PackagePath>
+      <Modified>2024-11-07T17:07:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\titi_duong\.nuget\packages\syncfusion.maui.core\28.2.9\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
+      <PackagePath>Syncfusion.Maui.Core.pri</PackagePath>
+      <Modified>2025-03-03T07:53:10.000</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.5</Name>
+      <Version>5001.214.1843.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.5, MinVersion = 5001.214.1843.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\titi_duong\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.5.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

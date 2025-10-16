@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SF_Demo.BookingUpdate"
+             Title="Booking Details">
+    <StackLayout Padding="20">
+        <Label Text="Meeting Room:" />
+        <Picker x:Name="cbRoom">
+            <Picker.Items>
+                <x:String>Meeting MFG202</x:String>
+                <x:String>Meeting MFG203</x:String>
+                <x:String>Meeting SMT201</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Day:" Margin="0,10,0,0"/>
+        <DatePicker x:Name="dpDay"/>
+
+        <Label Text="Time:" Margin="0,10,0,0"/>
+        <TimePicker x:Name="dpHour"/>
+
+        <Label Text="Meeting Content:" Margin="0,10,0,0"/>
+        <Editor x:Name="txtTitle"  HeightRequest="80" />
+        
+        <Label x:Name="lblRQer" Text="Request Time:" Margin="0,10,0,0"/>
+        
+        <Label x:Name="lblRQTime" Text="Request Time:" Margin="0,10,0,0"/>
+        
+        <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,0"/>
+
+        <HorizontalStackLayout Margin="0,30,0,0" HorizontalOptions="Center">
+            <Button x:Name="btUpdate" Text="Update" Clicked="btUpdate_Clicked" Background="#088020" Margin="0,0,30,0"/>
+            <Button x:Name="btDel" Text="Delete" Clicked="btDel_Clicked" Background="#d4882b"/>
+        </HorizontalStackLayout>
+    </StackLayout>
+</ContentPage>
