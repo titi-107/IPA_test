@@ -1,16 +1,15 @@
 workflows:
   maui_build:
-    name: .NET MAUI Build (Android + iOS)
+    name: .NET MAUI Build (.NET 8)
     instance_type: mac_mini_m1
 
     environment:
       vars:
-        DOTNET_VERSION: 9.0.306
+        DOTNET_VERSION: 8.0.100
         CONFIGURATION: Release
 
     scripts:
-      # 1️⃣ Kiểm tra và cài .NET SDK nếu chưa có
-      - name: Install .NET SDK
+      - name: Use .NET 8 SDK
         script: |
           export PATH="$PATH:$HOME/.dotnet"
           echo "Using .NET SDK version $DOTNET_VERSION"
@@ -20,38 +19,25 @@ workflows:
           )
           dotnet --info
 
-      # 2️⃣ Khôi phục dependency và workload MAUI
       - name: Restore dependencies
         script: |
           echo "Restoring .NET workloads and NuGet packages..."
           dotnet workload restore
           dotnet restore
 
-      # 3️⃣ Build Android (.apk)
       - name: Build Android
         script: |
-          echo "Building Android (.apk)..."
-          dotnet publish -f net9.0-android -c $CONFIGURATION -o build/android
+          dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
 
-      # 4️⃣ Build iOS (.ipa)
       - name: Build iOS
         script: |
-          echo "Building iOS (.ipa)..."
-          dotnet publish -f net9.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
+          dotnet publish -f net8.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
 
-    # 5️⃣ Xuất file build ra tab Artifacts để tải về
     artifacts:
       - build/android/**/*.apk
       - build/ios/**/*.ipa
 
-    # 6️⃣ Cache để build nhanh hơn
     cache:
       cache_paths:
         - ~/.nuget/packages
         - ~/.dotnet
-
-    # 7️⃣ Tự động build khi có thay đổi code
-    triggering:
-      events:
-        - push
-        - pull_request
