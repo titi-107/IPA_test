@@ -37,37 +37,43 @@ workflows:
           dotnet workload restore
           dotnet restore SF_Demo.sln
 
-      - name: Build iOS Simulator app
+          - name: Build iOS Simulator app
         script: |
-          dotnet build SF_Demo/SF_Demo.csproj \
+          dotnet restore SF_Demo/SF_Demo.csproj
+          dotnet publish SF_Demo/SF_Demo.csproj \
             -c Release \
             -f net8.0-ios \
             /p:RuntimeIdentifier=iossimulator-arm64 \
-            /p:Platform=iPhoneSimulator \
-            /p:OutputPath=./output
+            /p:Platform=iPhoneSimulator
 
-      - name: Verify build output
+      - name: Collect .app output
         script: |
-          echo "Checking build output:"
-          ls -R ./output || true
-
-      - name: Package app for BrowserStack
-        script: |
-          APP_PATH=$(find ./output -type d -name "*.app" | head -n 1)
+          echo "🔍 Searching for .app in build folder..."
+          APP_PATH=$(find SF_Demo/bin/iPhoneSimulator/Release/net8.0-ios/iossimulator-arm64 -type d -name "*.app" | head -n 1)
           if [ -z "$APP_PATH" ]; then
-            echo "❌ No .app file found in output folder!"
+            echo "❌ No .app file found! Build may have failed."
+            ls -R SF_Demo/bin/iPhoneSimulator/Release/net8.0-ios/iossimulator-arm64 || true
             exit 1
           fi
           echo "✅ Found app at: $APP_PATH"
-          cd "$(dirname "$APP_PATH")"
-          zip -r app.zip "$(basename "$APP_PATH")"
+          mkdir -p output
+          cp -R "$APP_PATH" ./output/
+
+      - name: Package app for BrowserStack
+        script: |
+          cd output
+          APP_NAME=$(basename *.app)
+          echo "📦 Zipping $APP_NAME..."
+          zip -r app.zip "$APP_NAME"
           mv app.zip $CM_BUILD_DIR/app.zip
 
       - name: Upload to BrowserStack
         script: |
+          echo "☁️ Uploading to BrowserStack..."
           curl -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
             -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
             -F "file=@$CM_BUILD_DIR/app.zip"
+
 
     artifacts:
       - app.zip
