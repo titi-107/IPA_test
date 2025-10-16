@@ -1,48 +1,52 @@
 workflows:
   maui_build:
-    name: .NET MAUI Build (.NET 8.0)
+    name: .NET MAUI iOS + Android (.NET 8)
     instance_type: mac_mini_m1
 
     environment:
       vars:
         CONFIGURATION: Release
+        DOTNET_ROOT: /Users/builder/dotnet8
+        DOTNET_MULTILEVEL_LOOKUP: 0
       xcode: 15.4
 
     scripts:
-      # 1️⃣ Cài .NET 8 SDK qua Homebrew (chắc chắn hoạt động trên mac_mini_m1)
+      # 1️⃣ Cài .NET 8 SDK (user-local, không ảnh hưởng .NET 9)
       - name: Install .NET 8 SDK
         script: |
-          echo "Installing .NET 8 SDK..."
-          brew update
-          brew install --cask dotnet-sdk
-          echo "Adding .NET to PATH..."
-          export PATH="/usr/local/share/dotnet:$PATH"
-          ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/dotnet || true
+          echo "Installing .NET 8 SDK locally..."
+          mkdir -p $HOME/dotnet8
+          curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+          chmod +x dotnet-install.sh
+          ./dotnet-install.sh --channel 8.0 --install-dir $HOME/dotnet8
+          export PATH="$HOME/dotnet8:$PATH"
           dotnet --info
 
-      # 2️⃣ Cài workloads MAUI
+      # 2️⃣ Cài workloads MAUI cho .NET 8 (không cần sudo)
       - name: Install MAUI workloads
         script: |
-          export PATH="/usr/local/share/dotnet:$PATH"
-          dotnet workload install maui android ios maccatalyst --skip-sign-check --ignore-failed-sources
+          export PATH="$HOME/dotnet8:$PATH"
+          export DOTNET_CLI_HOME="$HOME/.dotnet"
+          export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+          dotnet workload install maui android ios maccatalyst --ignore-failed-sources
+          dotnet workload list
 
-      # 3️⃣ Restore dependencies
+      # 3️⃣ Restore project dependencies
       - name: Restore dependencies
         script: |
-          export PATH="/usr/local/share/dotnet:$PATH"
-          dotnet workload restore
+          export PATH="$HOME/dotnet8:$PATH"
           dotnet restore
 
-      # 4️⃣ Build Android (.apk)
+      # 4️⃣ Build Android APK
       - name: Build Android
         script: |
-          export PATH="/usr/local/share/dotnet:$PATH"
+          export PATH="$HOME/dotnet8:$PATH"
           dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
 
-      # 5️⃣ Build iOS (.ipa)
-      - name: Build iOS
+      # 5️⃣ Build iOS IPA
+      - name: Build iOS IPA
         script: |
-          export PATH="/usr/local/share/dotnet:$PATH"
+          export PATH="$HOME/dotnet8:$PATH"
           dotnet publish -f net8.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
 
     artifacts:
