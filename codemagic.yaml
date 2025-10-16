@@ -6,22 +6,21 @@ workflows:
     environment:
       vars:
         CONFIGURATION: Release
-        DOTNET_ROOT: /usr/local/share/dotnet
       xcode: 15.4
 
     scripts:
-      # 1️⃣ Chọn đúng version .NET 8 SDK
-      - name: Use .NET 8 SDK
+      # 1️⃣ Cài .NET 8 SDK qua Homebrew (chắc chắn hoạt động trên mac_mini_m1)
+      - name: Install .NET 8 SDK
         script: |
-          echo "Setting .NET 8 SDK manually for mac_mini_m1..."
+          echo "Installing .NET 8 SDK..."
+          brew update
+          brew install --cask dotnet-sdk
+          echo "Adding .NET to PATH..."
           export PATH="/usr/local/share/dotnet:$PATH"
-          echo "Available .NET SDKs:"
-          ls /usr/local/share/dotnet/sdk || echo "No SDKs found!"
-          dotnet --list-sdks
-          echo "Using .NET SDK version:"
-          dotnet --version
+          ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/dotnet || true
+          dotnet --info
 
-      # 2️⃣ Cài workloads cần thiết cho MAUI
+      # 2️⃣ Cài workloads MAUI
       - name: Install MAUI workloads
         script: |
           export PATH="/usr/local/share/dotnet:$PATH"
