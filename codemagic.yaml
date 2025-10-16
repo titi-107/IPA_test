@@ -1,36 +1,52 @@
 workflows:
-  maui-build:
-    name: Build .NET MAUI (Android + iOS)
+  maui_build:
+    name: .NET MAUI Build (Android + iOS)
+    instance_type: mac_mini_m1
+
     environment:
       vars:
         DOTNET_VERSION: 8.0.100
-      xcode: latest
+        CONFIGURATION: Release
+
     scripts:
+      # 1️⃣ Cài .NET SDK
       - name: Install .NET SDK
         script: |
-          wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
-          chmod +x dotnet-install.sh
-          ./dotnet-install.sh --version $DOTNET_VERSION
           export PATH="$PATH:$HOME/.dotnet"
+          dotnet --version || (
+            echo "Installing .NET SDK $DOTNET_VERSION" &&
+            brew install --cask dotnet-sdk
+          )
           dotnet --info
 
-      - name: Install MAUI workloads
-        script: |
-          export PATH="$PATH:$HOME/.dotnet"
-          dotnet workload install maui-android
-          dotnet workload install maui-ios
-          dotnet workload install maui
-
+      # 2️⃣ Khôi phục dependency
       - name: Restore dependencies
         script: |
-          export PATH="$PATH:$HOME/.dotnet"
+          dotnet workload restore
           dotnet restore
 
-      - name: Build .NET MAUI app
+      # 3️⃣ Build Android (.apk)
+      - name: Build Android
         script: |
-          export PATH="$PATH:$HOME/.dotnet"
-          dotnet build SF_Demo/SF_Demo.csproj -c Release -f:net8.0-android
+          dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
+
+      # 4️⃣ Build iOS (.ipa)
+      - name: Build iOS
+        script: |
+          dotnet publish -f net8.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
 
     artifacts:
-      - "**/*.apk"
-      - "**/*.ipa"
+      - build/android/**/*.apk
+      - build/ios/**/*.ipa
+
+    # (Tuỳ chọn) Cache để build nhanh hơn
+    cache:
+      cache_paths:
+        - ~/.nuget/packages
+        - ~/.dotnet
+
+    # (Tuỳ chọn) Trigger tự động
+    triggering:
+      events:
+        - push
+        - pull_request
