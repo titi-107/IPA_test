@@ -1,36 +1,48 @@
 workflows:
   maui_build:
-    name: .NET MAUI Build (.NET 8)
+    name: .NET MAUI Build (.NET 8.0)
     instance_type: mac_mini_m1
 
     environment:
       vars:
-        DOTNET_VERSION: 8.0.100
         CONFIGURATION: Release
+        DOTNET_ROOT: /usr/local/share/dotnet/x64
+      xcode: 15.4
 
     scripts:
+      # 1️⃣ Chọn đúng version .NET 8
       - name: Use .NET 8 SDK
         script: |
-          export PATH="$PATH:$HOME/.dotnet"
-          echo "Using .NET SDK version $DOTNET_VERSION"
-          dotnet --version || (
-            echo "Installing .NET SDK $DOTNET_VERSION" &&
-            brew install --cask dotnet-sdk
-          )
-          dotnet --info
+          echo "Setting .NET 8 SDK manually..."
+          export PATH="/usr/local/share/dotnet/x64:$PATH"
+          dotnet --list-sdks
+          echo "Using .NET SDK version:"
+          dotnet --version
 
+      # 2️⃣ Cài workload MAUI cục bộ
+      - name: Install MAUI workloads
+        script: |
+          echo "Installing MAUI workloads for .NET 8..."
+          export PATH="/usr/local/share/dotnet/x64:$PATH"
+          dotnet workload install maui android ios maccatalyst --skip-sign-check --ignore-failed-sources
+
+      # 3️⃣ Restore dependencies
       - name: Restore dependencies
         script: |
-          echo "Restoring .NET workloads and NuGet packages..."
+          export PATH="/usr/local/share/dotnet/x64:$PATH"
           dotnet workload restore
           dotnet restore
 
+      # 4️⃣ Build Android (.apk)
       - name: Build Android
         script: |
+          export PATH="/usr/local/share/dotnet/x64:$PATH"
           dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
 
+      # 5️⃣ Build iOS (.ipa)
       - name: Build iOS
         script: |
+          export PATH="/usr/local/share/dotnet/x64:$PATH"
           dotnet publish -f net8.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
 
     artifacts:
