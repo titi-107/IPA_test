@@ -6,70 +6,55 @@ workflows:
     environment:
       vars:
         DOTNET_VERSION: 8.0.415
-        DOTNET_ROOT: /Users/builder/dotnet8
-        PATH: /Users/builder/dotnet8:$PATH
+        DOTNET_ROOT: /usr/local/share/dotnet
+        PATH: /usr/local/share/dotnet:$PATH
         BROWSERSTACK_USERNAME: $BROWSERSTACK_USERNAME
         BROWSERSTACK_ACCESS_KEY: $BROWSERSTACK_ACCESS_KEY
       xcode: 16.0
-      cocoapods: default
-      node: 18.0.0
+
     scripts:
       - name: Install .NET 8 SDK
         script: |
           echo "Installing .NET 8 SDK..."
           brew uninstall --cask dotnet-sdk || true
           brew install --cask dotnet-sdk@8
-          sudo ln -sfn /usr/local/share/dotnet8/dotnet /usr/local/bin/dotnet
+          sudo ln -sfn /usr/local/share/dotnet/dotnet /usr/local/bin/dotnet
           dotnet --version
+          dotnet --list-sdks
 
-      - name: Set up .NET 8 environment
+      - name: Install MAUI workloads
         script: |
-          export DOTNET_ROOT=/Users/builder/dotnet8
-          export PATH=$DOTNET_ROOT:$PATH
-          echo "Using .NET SDK:"
-          dotnet --info
-
-      - name: Install MAUI workloads (user scope)
-        script: |
-          echo "Installing .NET MAUI workloads (user mode)..."
-          dotnet workload install maui-ios --user --skip-manifest-update --ignore-failed-sources
+          echo "Installing .NET MAUI workloads..."
+          sudo dotnet workload install maui --ignore-failed-sources
+          sudo dotnet workload install maui-android --ignore-failed-sources
+          sudo dotnet workload install maui-ios --ignore-failed-sources
+          sudo dotnet workload install maui-maccatalyst --ignore-failed-sources
           dotnet workload list
 
       - name: Restore dependencies
         script: |
+          echo "Restoring dependencies..."
+          dotnet workload restore
           dotnet restore SF_Demo.sln
 
-      - name: Build iOS simulator app
+      - name: Build iOS Simulator app
         script: |
-          echo "Building MAUI iOS simulator app..."
-          dotnet build SF_Demo.sln -c Release -f net8.0-ios /p:BuildIpa=false /p:RuntimeIdentifier=iossimulator-arm64
+          echo "Building iOS Simulator..."
+          dotnet build SF_Demo.sln -c Release -f net8.0-ios /p:RuntimeIdentifier=iossimulator-arm64
           find . -name "*.app" || true
 
-      - name: Package simulator app into .zip for BrowserStack
+      - name: Package app for BrowserStack
         script: |
-          echo "Packaging app for BrowserStack..."
+          echo "Packaging app..."
           APP_PATH=$(find ./ -type d -name "*.app" | head -n 1)
-          if [ -z "$APP_PATH" ]; then
-            echo "No .app found, build failed."
-            exit 1
-          fi
           zip -r app.zip "$APP_PATH"
 
       - name: Upload to BrowserStack
         script: |
-          echo "Uploading build to BrowserStack..."
+          echo "Uploading to BrowserStack..."
           curl -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
             -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
             -F "file=@app.zip"
 
     artifacts:
       - app.zip
-      - SF_Demo/**/*.app
-
-    publishing:
-      email:
-        recipients:
-          - your_email@company.com
-        notify:
-          success: true
-          failure: true
