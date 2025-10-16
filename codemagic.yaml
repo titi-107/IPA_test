@@ -40,7 +40,7 @@ workflows:
       - name: Build iOS Simulator app
         script: |
           dotnet restore SF_Demo/SF_Demo.csproj
-          dotnet publish SF_Demo/SF_Demo.csproj \
+          dotnet build SF_Demo/SF_Demo.csproj \
             -c Release \
             -f net8.0-ios \
             /p:RuntimeIdentifier=iossimulator-arm64 \
