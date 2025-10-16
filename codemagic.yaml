@@ -16,9 +16,16 @@ workflows:
           brew install --cask dotnet-sdk
           dotnet --version
 
-      - name: Install MAUI workloads
+      - name: Install MAUI workloads (user scope)
         script: |
-          dotnet workload install maui-ios --ignore-failed-sources
+          mkdir -p $HOME/.dotnet
+          export DOTNET_ROOT=$HOME/.dotnet
+          export PATH=$DOTNET_ROOT:$PATH
+
+          echo "Installing .NET MAUI workloads locally..."
+          dotnet workload install maui-ios --user --skip-manifest-update --ignore-failed-sources
+          dotnet workload list
+
 
       - name: Restore dependencies
         script: |
