@@ -19,6 +19,14 @@ workflows:
           )
           dotnet --info
 
+      # Cài đặt .NET SDK và các workloads cần thiết cho MAUI  
+      - name: Install MAUI workloads
+        script: |
+          export PATH="$PATH:$HOME/.dotnet"
+          dotnet workload install maui-android
+          dotnet workload install maui-ios
+          dotnet workload install maui
+
       # 2️⃣ Khôi phục dependency
       - name: Restore dependencies
         script: |
