@@ -1,7 +1,7 @@
 @string/appbar_scrolling_view_behavior;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\layout\fragment_backstack.xml
 @string/appbar_scrolling_view_behavior;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\layout\navigationlayout.xml
-adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo.xml
-adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo_round.xml
+adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+adaptive-icon;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 alpha;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\164\jl\res\anim\enterfromleft.xml
 alpha;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\164\jl\res\anim\exittoleft.xml
 alpha;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\anim\nav_default_enter_anim.xml
@@ -15,8 +15,8 @@ androidx.fragment.app.FragmentContainerView;D:\Titi\DEV\Project\AVC\SF_Demo\SF_D
 androidx.fragment.app.FragmentContainerView;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\layout\navigationlayout.xml
 attr;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\163\jl\res\values\attrs.xml
 attr;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\values\attr.xml
-background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo.xml
-background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo_round.xml
+background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+background;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 bitmap;obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
 bitmap;obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
 cache-path;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\167\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
@@ -34,8 +34,8 @@ domain;obj\Debug\net8.0-android\res\xml\networksecurityconfig.xml
 domain-config;obj\Debug\net8.0-android\res\xml\networksecurityconfig.xml
 external-cache-path;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\167\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 external-path;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\167\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
-foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo.xml
-foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo_round.xml
+foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+foreground;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 item;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\163\jl\res\values\styles.xml
 item;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\drawable\maui_splash.xml
 item;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\166\jl\res\values\styles.xml
@@ -46,8 +46,8 @@ layer-list;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-andr
 layer-list;obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
 layer-list;obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
 microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\164\jl\res\layout\flyoutcontent.xml
-monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo.xml
-monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\sf_logo_round.xml
+monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
+monochrome;obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 network-security-config;obj\Debug\net8.0-android\res\xml\networksecurityconfig.xml
 paths;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\167\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 resources;D:\Titi\DEV\Project\AVC\SF_Demo\SF_Demo\SF_Demo\obj\Debug\net8.0-android\lp\163\jl\res\values\attrs.xml

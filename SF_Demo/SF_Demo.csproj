@@ -71,8 +71,13 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\sf_logo.png">
+
+		<!--<MauiIcon Include="Resources\AppIcon\sf_logo.png">
+		</MauiIcon>-->
+
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" >
 		</MauiIcon>
+
 		
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\sf_logo1.png" Color="#ffffff" BaseSize="128,128" />
