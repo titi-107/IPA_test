@@ -5,56 +5,30 @@ workflows:
 
     environment:
       vars:
-        DOTNET_VERSION: 8.0.100
+        DOTNET_VERSION: 9.0.306
         CONFIGURATION: Release
 
     scripts:
-      # 1️⃣ Cài .NET SDK
       - name: Install .NET SDK
         script: |
           export PATH="$PATH:$HOME/.dotnet"
-          dotnet --version || (
-            echo "Installing .NET SDK $DOTNET_VERSION" &&
-            brew install --cask dotnet-sdk
-          )
+          dotnet --version
           dotnet --info
 
-      # Cài đặt .NET SDK và các workloads cần thiết cho MAUI  
-      - name: Install MAUI workloads
-        script: |
-          export PATH="$PATH:$HOME/.dotnet"
-          dotnet workload install maui-android
-          dotnet workload install maui-ios
-          dotnet workload install maui
-
-      # 2️⃣ Khôi phục dependency
+      # ✅ Thay vì install, chỉ restore (an toàn, không cần quyền sudo)
       - name: Restore dependencies
         script: |
           dotnet workload restore
           dotnet restore
 
-      # 3️⃣ Build Android (.apk)
       - name: Build Android
         script: |
-          dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
+          dotnet publish -f net9.0-android -c $CONFIGURATION -o build/android
 
-      # 4️⃣ Build iOS (.ipa)
       - name: Build iOS
         script: |
-          dotnet publish -f net8.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
+          dotnet publish -f net9.0-ios -c $CONFIGURATION -o build/ios /p:BuildIpa=true
 
     artifacts:
       - build/android/**/*.apk
       - build/ios/**/*.ipa
-
-    # (Tuỳ chọn) Cache để build nhanh hơn
-    cache:
-      cache_paths:
-        - ~/.nuget/packages
-        - ~/.dotnet
-
-    # (Tuỳ chọn) Trigger tự động
-    triggering:
-      events:
-        - push
-        - pull_request
