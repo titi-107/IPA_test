@@ -38,11 +38,20 @@ workflows:
           dotnet restore
 
       # Cài Android SDK Platform 34
-      - name: Install Android SDK Platform 34
+      - name: Ensure Android SDK Platform 34 exists
         script: |
+          echo "Checking sdkmanager location..."
+          export PATH=$PATH:/usr/local/share/android-sdk/cmdline-tools/latest/bin:/usr/local/share/android-sdk/tools/bin:/opt/homebrew/share/android-sdk/cmdline-tools/latest/bin
+          which sdkmanager || true
+
+          echo "Accepting Android licenses..."
+          yes | sdkmanager --licenses || true
+
           echo "Installing Android SDK Platform 34..."
           yes | sdkmanager --install "platforms;android-34" "platform-tools" "build-tools;34.0.0"
-          sdkmanager --list | grep "android-34" || echo "API 34 installed successfully"
+
+          echo "Listing installed platforms..."
+          ls -la /usr/local/share/android-sdk/platforms || true
 
       # Build Android APK
       - name: Build Android
