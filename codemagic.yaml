@@ -37,7 +37,7 @@ workflows:
           dotnet workload restore
           dotnet restore SF_Demo.sln
 
-          - name: Build iOS Simulator app
+      - name: Build iOS Simulator app
         script: |
           dotnet restore SF_Demo/SF_Demo.csproj
           dotnet publish SF_Demo/SF_Demo.csproj \
