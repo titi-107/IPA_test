@@ -8,8 +8,8 @@ workflows:
         DOTNET_VERSION: 8.0.415
         DOTNET_ROOT: /Users/builder/dotnet8
         PATH: /Users/builder/dotnet8:$PATH
-        BROWSERSTACK_USERNAME: Encrypted(put_your_browserstack_username_here)
-        BROWSERSTACK_ACCESS_KEY: Encrypted(put_your_browserstack_accesskey_here)
+        BROWSERSTACK_USERNAME: $BROWSERSTACK_USERNAME
+        BROWSERSTACK_ACCESS_KEY: $BROWSERSTACK_ACCESS_KEY
       xcode: 16.0
       cocoapods: default
       node: 18.0.0
