@@ -39,22 +39,35 @@ workflows:
 
       - name: Build iOS Simulator app
         script: |
-          echo "Building iOS Simulator..."
-          dotnet build SF_Demo.sln -c Release -f net8.0-ios /p:RuntimeIdentifier=iossimulator-arm64
-          find . -name "*.app" || true
+          dotnet build SF_Demo/SF_Demo.csproj \
+            -c Release \
+            -f net8.0-ios \
+            /p:RuntimeIdentifier=iossimulator-arm64 \
+            /p:Platform=iPhoneSimulator \
+            /p:OutputPath=./output
+
+      - name: Verify build output
+        script: |
+          echo "Checking build output:"
+          ls -R ./output || true
 
       - name: Package app for BrowserStack
         script: |
-          echo "Packaging app..."
-          APP_PATH=$(find ./ -type d -name "*.app" | head -n 1)
-          zip -r app.zip "$APP_PATH"
+          APP_PATH=$(find ./output -type d -name "*.app" | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "❌ No .app file found in output folder!"
+            exit 1
+          fi
+          echo "✅ Found app at: $APP_PATH"
+          cd "$(dirname "$APP_PATH")"
+          zip -r app.zip "$(basename "$APP_PATH")"
+          mv app.zip $CM_BUILD_DIR/app.zip
 
       - name: Upload to BrowserStack
         script: |
-          echo "Uploading to BrowserStack..."
           curl -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" \
             -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
-            -F "file=@app.zip"
+            -F "file=@$CM_BUILD_DIR/app.zip"
 
     artifacts:
       - app.zip
