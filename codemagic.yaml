@@ -11,7 +11,7 @@ workflows:
       xcode: 15.4
 
     scripts:
-      # 1️⃣ Cài .NET 8 SDK (user-local, không ảnh hưởng .NET 9)
+      # Cài .NET 8 SDK (user-local, không ảnh hưởng .NET 9)
       - name: Install .NET 8 SDK
         script: |
           echo "Installing .NET 8 SDK locally..."
@@ -22,7 +22,7 @@ workflows:
           export PATH="$HOME/dotnet8:$PATH"
           dotnet --info
 
-      # 2️⃣ Cài workloads MAUI cho .NET 8 (không cần sudo)
+      # Cài workloads MAUI cho .NET 8 (không cần sudo)
       - name: Install MAUI workloads
         script: |
           export PATH="$HOME/dotnet8:$PATH"
@@ -31,19 +31,26 @@ workflows:
           dotnet workload install maui android ios maccatalyst --ignore-failed-sources
           dotnet workload list
 
-      # 3️⃣ Restore project dependencies
+      # Restore project dependencies
       - name: Restore dependencies
         script: |
           export PATH="$HOME/dotnet8:$PATH"
           dotnet restore
 
-      # 4️⃣ Build Android APK
+      # Cài Android SDK Platform 34
+      - name: Install Android SDK Platform 34
+        script: |
+          echo "Installing Android SDK Platform 34..."
+          yes | sdkmanager --install "platforms;android-34" "platform-tools" "build-tools;34.0.0"
+          sdkmanager --list | grep "android-34" || echo "API 34 installed successfully"
+
+      # Build Android APK
       - name: Build Android
         script: |
           export PATH="$HOME/dotnet8:$PATH"
           dotnet publish -f net8.0-android -c $CONFIGURATION -o build/android
 
-      # 5️⃣ Build iOS IPA
+      # Build iOS IPA
       - name: Build iOS IPA
         script: |
           export PATH="$HOME/dotnet8:$PATH"
